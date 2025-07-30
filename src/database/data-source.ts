@@ -7,7 +7,7 @@ export const AppDataSource = new DataSource({
   host: 'localhost', // Verifica que esta IP sea correcta
   port: 3306,
   username: 'Plants', // Verifica que este usuario exista y tenga permisos
-  password: 'Plants32', // Verifica que esta contraseña sea correcta
+  password: 'Plants32', 
   database: 'Plants',
   entities: [User, EventEntity],
   synchronize: false,
