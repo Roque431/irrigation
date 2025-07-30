@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import request from 'supertest';
-import app from '../src/server'; // Assuming your server.ts exports the express app
+import app from '../server'; // Adjusted path assuming 'server.ts' is in 'src' folder
+import { describe } from 'node:test';
 
 describe('User API', () => {
   it('should register a new user', async () => {

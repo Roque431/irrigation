@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { EventController } from '../src/autor/infrastructure/controllers/EventController';
+import { describe } from 'node:test';
 
 describe('EventController', () => {
   let eventController: EventController;
