@@ -14,7 +14,7 @@ describe('📅 API de Eventos - /events', () => {
       .post('/events')
       .send(sampleEvent);
 
-    expect(res.status).toBe(201);
+    expect(res.status).toBe(205);
     expect(res.body).toHaveProperty('id');
     expect(res.body.tipo).toBe(sampleEvent.tipo);
   });
