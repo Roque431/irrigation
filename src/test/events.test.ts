@@ -1,10 +1,10 @@
 import request from 'supertest';
 import app from '../src/app'; // Asegúrate de que este path apunta a tu instancia de Express
 
-describe('📅 API de Eventos - /events', () => {
+describe(' API de Eventos - /events', () => {
 
   const sampleEvent = {
-    tipo: 'riego',
+    tipo: 'riegos',
     fecha: '2025-08-01',
     descripcion: 'Riego programado para el lote 3'
   };
