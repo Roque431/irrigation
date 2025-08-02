@@ -5,7 +5,7 @@ describe(' API de Eventos - /events', () => {
 
   const sampleEvent = {
     tipo: 'riegos',
-    fecha: '2025-08-01',
+    fecha: '2026-07-01',
     descripcion: 'Riego programado para el lote 3'
   };
 
