@@ -33,10 +33,10 @@ jobs:
             # Navega a tu proyecto
             cd /home/ubuntu/irrigation
 
-            # Instala Node.js v18, npm y PM2
+            # Instala Node.js v18, npm, PM2, ts-node y typescript
             curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
             sudo apt-get install -y nodejs
-            sudo npm install -g pm2
+            sudo npm install -g pm2 ts-node typescript
 
             # Actualiza código
             git pull origin Developer
@@ -44,5 +44,5 @@ jobs:
             # Instala dependencias
             npm install
 
-            # Reinicia o inicia con PM2
-            pm2 restart app || pm2 start src/server.ts --name app
+            # Reinicia o inicia con PM2 usando ts-node
+            pm2 restart app || pm2 start src/server.ts --name app --interpreter ts-node
