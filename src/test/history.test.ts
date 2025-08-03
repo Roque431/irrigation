@@ -1,7 +1,7 @@
 import request from 'supertest';
 import app from '../src/app';
 
-describe('📊 API Historial de Riego - /history', () => {
+describe(' API Historial de Riegosss con base - /history', () => {
 
   it('HS01 - Almacenar datos históricos', async () => {
     const res = await request(app)

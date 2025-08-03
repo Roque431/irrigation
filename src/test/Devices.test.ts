@@ -1,13 +1,13 @@
 import request from 'supertest';
 import app from '../src/app';
 
-describe('💧 API Dispositivos de Riego - /devices', () => {
+describe(' API Dispositivos de Riego - /devices', () => {
   
   let deviceId: number;
 
   it('DV01 - Añadir nuevo dispositivo', async () => {
     const res = await request(app).post('/devices').send({
-      nombre: 'Dispositivo Lote 1',
+      nombre: 'Dispositivo Lotes 1',
       ubicacion: 'Zona A',
       estado: 'activo'
     });

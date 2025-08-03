@@ -1,11 +1,11 @@
 import request from 'supertest';
 import app from '../src/app'; // Asegúrate de que este path apunta a tu instancia de Express
 
-describe('📅 API de Eventos - /events', () => {
+describe(' API de Eventos - /events', () => {
 
   const sampleEvent = {
-    tipo: 'riego',
-    fecha: '2025-08-01',
+    tipo: 'riegos',
+    fecha: '2026-07-01',
     descripcion: 'Riego programado para el lote 3'
   };
 
@@ -14,7 +14,7 @@ describe('📅 API de Eventos - /events', () => {
       .post('/events')
       .send(sampleEvent);
 
-    expect(res.status).toBe(201);
+    expect(res.status).toBe(205);
     expect(res.body).toHaveProperty('id');
     expect(res.body.tipo).toBe(sampleEvent.tipo);
   });

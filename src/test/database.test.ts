@@ -5,7 +5,7 @@ import app from '../src/app';
 const testDataSource = new DataSource({
   type: 'postgres',
   host: 'localhost',
-  port: 5432,
+  port: 3000,
   username: 'roque42',
   password: 'roque4232',
   database: 'irrigation_test',
